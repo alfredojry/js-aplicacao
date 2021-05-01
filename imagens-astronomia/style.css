@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+* {
+    font-family: 'Zen Dots', cursive;
+}
+header {
+    background-color: forestgreen;
+    padding-bottom: 5px;
+}
+header > h1 {
+    text-align: center;
+    color: floralwhite;
+}
+header > p {
+    text-align: center;
+    background-color: chartreuse;
+    padding: 5px;
+}
+#criterios > div {
+    width: 30%;
+    padding: 10px;
+}
+#criterios {
+    display: flex;
+    align-content: space-around;
+    padding: 2%;
+}
+#conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3%;
+    justify-content: space-between;
+}
+#conteudo > article {
+    width: 250px;
+    background-color: mintcream;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#conteudo > article > img {
+    width: 200px;
+    height: 200px;
+}
+#conteudo > article > h6 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+#conteudo > article > p {
+    font-size: 0.75rem;
+}
+button {
+    margin-left: 10%;
+}
+@media screen and (max-width: 500px) {
+    #criterios {
+        flex-direction: column;
+    }
+    #criterios > div {
+        width: 80%;
+    }    
+}
